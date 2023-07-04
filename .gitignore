@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Agdata.Bootcamp.2022.SRS.Domain/bin
+/Agdata.Bootcamp.2022.SRS.Domain/obj
+/Agdata.Bootcamp.2022.SRS.Services/bin
+/Agdata.Bootcamp.2022.SRS.Services/obj
+/Agdata.Bootcamp.2022.SRS.Services.tests/bin
+/Agdata.Bootcamp.2022.SRS.Services.tests/obj
+/AGDATA.Bootcamp.2022.SRS.RG/.vs
+/AGDATA.Bootcamp.2022.SRS.DAL/bin/Debug/net6.0
+/AGDATA.Bootcamp.2022.SRS.DAL/obj
+/AGDATA.Bootcamp.2022.SRS.Api/bin/Debug/net6.0
+/AGDATA.Bootcamp.2022.SRS.Api/obj
+/AGDATA.Bootcamp.2022.SRS.RG.Controller.tests/bin
+/AGDATA.Bootcamp.2022.SRS.RG.Controller.tests/obj
+/AGDATA.Bootcamp.2022.SRS.RG.Repositories.tests/bin
+/AGDATA.Bootcamp.2022.SRS.RG.Repositories.tests/obj
+/packages
+/WebApi/bin

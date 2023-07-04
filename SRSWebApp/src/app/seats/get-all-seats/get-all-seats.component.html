@@ -1,0 +1,84 @@
+<div class="container-fluid mt-10 ">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-6">
+      <div class="container-fluid mt-8" >
+  <div class="row justify-content-md-center">
+    <div class="col-lg-12">
+      <div class="button">
+        <!-- <button  color="primary" class="button btn-primary" data-toggle="modal"
+          data-target="#exampleModal" (click)="addClick()" data-backup="static" data-keyboard="false">+ Add
+          Seat</button> -->
+          <button  color="primary" class="button btn-primary" data-toggle="modal"
+          data-target="#exampleModal" (click)="addmultipleClick()" data-backup="static" data-keyboard="false">+ Add
+          Seat/s</button>
+        <button  color="primary" class="button btn-primary" style="margin-left: 1%;" *ngIf="addToList.length >0" (click)="deleteClick([addToList])">Delete Selected
+          Seats</button>
+
+      </div>
+      <br>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dial-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header ">
+              <h5 class="modal-title " id="exampleModalLabel">{{ModalTitle}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeClick()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- <div class="modal-body">
+              <app-add-seat [seat]="seat" *ngIf="ActivateAddSeat">
+
+              </app-add-seat>
+
+            </div> -->
+            <div class="modal-body">
+              <app-multiple [seat]="seat" *ngIf="ActivateAddseats">
+
+              </app-multiple>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-12">
+        <div class="row justify-content-md-center">
+          <table class="table table-hover ">
+            <thead style="background-color:black ;">
+              <tr>
+                <th scope="col" style="color:aliceblue;">Seat Name</th>
+                <!-- <th scope="col"><input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Delete All</label></th> -->
+                <th scope="col"style="color:aliceblue;" >Select </th>
+  
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let seat of seatList | paginate: { itemsPerPage: 10, currentPage: page}">
+                <td><button type="button" class="btn btn-info" >{{seat.seatName}}</button></td>
+                <!-- <td><button type="button" class="btn btn-outline-danger" (click)="deleteClick([seat.seatId])">Delete</button></td> -->
+                <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"  (click)="addToIdList(seat.seatId)" >
+              <label class="form-check-label" for="exampleCheck1" >Delete</label> -->
+                <td>
+                  <mat-checkbox class="example-margin"  (click)="addToIdList(seat.seatId)"></mat-checkbox>
+                </td>
+                
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <pagination-controls  (pageChange)="page = $event"></pagination-controls>
+
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div >
+    <div class="form-group " >
+        <div class="col-sm-15">
+            <label for="exampleInputEmail1" >Booking Date<span style="color: red;">*</span> </label>
+            <br>
+            <input type="date" class="form-control"(change)=" getUnreservedList(BookingDate)" [(ngModel)]="BookingDate" > 
+          </div>
+          <br>
+        <label for="exampleInputEmail1">Employee Name<span style="color: red;">*</span></label>
+        <input required type="text" #name="ngModel" class="form-control" [(ngModel)]="EmployeeName" placeholder="Enter Employee Name"  pattern="[A-Za-z]+$">  
+        <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
+            *employee name is mandatory
+        </div>  
+        <div class="divContainer" *ngIf="name.errors?.['pattern']">
+            Invalid employee name!
+        </div>
+        <br>
+        
+         <div class="col-sm-15">
+          <label for="exampleInputEmail1">Seat Name<span style="color: red;">*</span></label>
+
+            <select class="form-control" [(ngModel)]="SeatName">
+                <option>---Select---</option>
+                <option *ngFor="let dataItem of unreservedList">
+                    {{dataItem.seatName}}
+                </option>
+            </select>
+        </div>       
+        <br>
+        
+        <br>
+
+        <button mat-flat-button color="primary" style="margin-left: 1%;" (click)="addReservation()"  *ngIf="name.valid " >Reserve Seat</button>
+
+
+        
+    
+    </div>
+</div>
+ 
+

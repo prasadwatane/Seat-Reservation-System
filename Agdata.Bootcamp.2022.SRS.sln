@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agdata.Bootcamp.2022.SRS.Domain", "Agdata.Bootcamp.2022.SRS.Domain\Agdata.Bootcamp.2022.SRS.Domain.csproj", "{2006A458-5F05-43E0-BD60-F8E112B5E30B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agdata.Bootcamp.2022.SRS.Services", "Agdata.Bootcamp.2022.SRS.Services\Agdata.Bootcamp.2022.SRS.Services.csproj", "{78D2F43E-76B3-4D6D-A3DB-9AAD0181DB67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{687B79D2-5FE5-48FB-8F82-5B51491EFA08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agdata.Bootcamp.2022.SRS.Services.tests", "Agdata.Bootcamp.2022.SRS.Services.tests\Agdata.Bootcamp.2022.SRS.Services.tests.csproj", "{830CD41D-E727-4CD4-A543-35A3286B00F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDATA.Bootcamp.2022.SRS.Api", "AGDATA.Bootcamp.2022.SRS.Api\AGDATA.Bootcamp.2022.SRS.Api.csproj", "{5216453D-5579-4840-B355-5A2B4A8AFBB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDATA.Bootcamp.2022.SRS.RG.Controller.tests", "AGDATA.Bootcamp.2022.SRS.RG.Controller.tests\AGDATA.Bootcamp.2022.SRS.RG.Controller.tests.csproj", "{D9BCA285-25EB-4699-8776-CC327568D460}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRS.Messagebus", "SRS.Messagebus\SRS.Messagebus.csproj", "{9F31216E-6BBA-4168-98AB-85D5A6554EA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2006A458-5F05-43E0-BD60-F8E112B5E30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2006A458-5F05-43E0-BD60-F8E112B5E30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2006A458-5F05-43E0-BD60-F8E112B5E30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2006A458-5F05-43E0-BD60-F8E112B5E30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D2F43E-76B3-4D6D-A3DB-9AAD0181DB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D2F43E-76B3-4D6D-A3DB-9AAD0181DB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D2F43E-76B3-4D6D-A3DB-9AAD0181DB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D2F43E-76B3-4D6D-A3DB-9AAD0181DB67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830CD41D-E727-4CD4-A543-35A3286B00F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830CD41D-E727-4CD4-A543-35A3286B00F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830CD41D-E727-4CD4-A543-35A3286B00F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830CD41D-E727-4CD4-A543-35A3286B00F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5216453D-5579-4840-B355-5A2B4A8AFBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5216453D-5579-4840-B355-5A2B4A8AFBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5216453D-5579-4840-B355-5A2B4A8AFBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5216453D-5579-4840-B355-5A2B4A8AFBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9BCA285-25EB-4699-8776-CC327568D460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BCA285-25EB-4699-8776-CC327568D460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BCA285-25EB-4699-8776-CC327568D460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BCA285-25EB-4699-8776-CC327568D460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F31216E-6BBA-4168-98AB-85D5A6554EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F31216E-6BBA-4168-98AB-85D5A6554EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F31216E-6BBA-4168-98AB-85D5A6554EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F31216E-6BBA-4168-98AB-85D5A6554EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0751A7C5-A26D-4414-8936-581F56439DB7}
+	EndGlobalSection
+EndGlobal

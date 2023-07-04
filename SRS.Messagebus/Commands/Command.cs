@@ -1,0 +1,13 @@
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Agdata.Bootcamp._2022.SRS.Domain.Model;
+using Agdata.Bootcamp._2022.SRS.Domain.ViewModel;
+
+namespace SRS.Messagebus.Commands
+{
+    public record AddReservationCommand(ReservationViewModel ReservationViewModel) : IRequest<int>;
+}

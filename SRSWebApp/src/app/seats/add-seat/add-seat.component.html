@@ -1,0 +1,25 @@
+<div >
+    <div class="form-group">
+        <label for="exampleInputEmail1">Seat Name</label>
+        <input required  type="text" #name="ngModel" class="form-control "  [(ngModel)]="SeatName" placeholder="Enter Seat Name (ex.A1)" required pattern="[A-Z0-9]+$" >     
+         <!-- <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+            <h5>*seat name is required</h5>
+                1.Seat name should start with letter,
+                <br>
+                2.It Should be Alphanumeric.    
+        </div>    -->
+         <div class="divContainer" *ngIf="name.errors?.['required']">
+            *Seat Name is required.
+        </div>
+
+        <div class="divContainer" *ngIf="name.errors?.['pattern']">
+            *please give correct name
+        </div>
+
+    </div>
+    <button  mat-flat-button color="primary" (click)="addSeat()" *ngIf="name.valid">Add</button>
+</div>
+    
+
+
+
