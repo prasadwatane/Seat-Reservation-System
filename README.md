@@ -1,20 +1,39 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# About 
+This project is a Seat Reservation System that allows employees to view seat availability and enables administrators to add or delete seats, as well as manage reservations. It uses ASP.Net Core, C#, Angular 14, Repository pattern and TDD to get hands-on experience on the technology.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+This Website is built for following purpose:-
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Seat Availability
+Booking seats online.
+Add/Delete Seats
+
+The Admin have the following access to this website:-
+
+Add Seats
+Update Seats
+Remove Seats
+Remove Reservation
+See Reservation of Employees
+
+
+The Users have the following Access:-
+
+Register
+Check Seat Availability
+Make Reservation
+
+
+
+Technologies used:-
+Front-End Development:
+Angular 14
+Jasmine
+Karma
+
+
+Back-End Development
+ASP .NET Core
+CQRS
+SQL SERVER
